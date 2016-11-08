@@ -1,3 +1,4 @@
+<?php include "valikko.php"; ?>
 <?php
 if(isset($_POST['btn'])) {
 $enimi=$_POST['en'];
@@ -6,7 +7,7 @@ echo 'Terve '.$enimi.' '.$snimi;
 }
 ?>
 
-<h1>Henkilotiedot</h1>
+<h1>Henkilotiedot(POST)</h1>
 <FORM action="post_esim.php" method="POST">
 <label>Etunimi</label><input type="text" name="en">
 <br>
@@ -14,3 +15,4 @@ echo 'Terve '.$enimi.' '.$snimi;
 <br>
 <input type="submit" name="btn" value="Lähetä">
 </FORM>
+<?php include "footer.php"; ?>
